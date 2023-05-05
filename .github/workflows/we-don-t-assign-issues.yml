@@ -1,0 +1,33 @@
+name: We don't assign issues
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+
+jobs:
+  issue-labeled:
+    permissions:
+      issues: write
+      pull-requests: write
+    if: github.repository == 'Open-reSource/labs-we-don-t-assign-issues'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Answer with a comment
+        if: github.event.label.name == 'we don''t assign issues'
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: "create-comment"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            Hello @${{ github.event.issue.user.login }}.
+            Thanks for contributing to this repository.
+            As mentioned in [our contributing guidelines](https://github.com/Open-reSource/labs-we-don-t-assign-issues/blob/main/CONTRIBUTING.md), we don't assign issues in this repository.
+            Feel free to directly create a PR if the context is obvious, or explain what changes could be done as a comment here so that maintainers can validate the direction and potential fix you might suggest.
+      - name: Remove label
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: |
+            we don't assign issues
