@@ -16,3 +16,9 @@ You can see the process in https://github.com/Open-reSource/labs-we-don-t-assign
 
 2. Create a new workflow in `.github/worflows` (name doesn't matter)
 3. Copy the content of https://github.com/Open-reSource/labs-we-don-t-assign-issues/blob/main/.github/workflows/we-don-t-assign-issues.yml and adapt the label name, and the comment sent to the users.
+
+## Sponsors of Open {re}Source
+
+<p align="center">
+  <img src='https://cdn.jsdelivr.net/gh/Open-reSource/sponsors/sponsors.svg'/>
+</p>
