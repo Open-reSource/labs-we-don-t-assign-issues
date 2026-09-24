@@ -1,3 +1,5 @@
+<p align="center"><picture><source srcset=".github/header.svg" type="image/svg+xml"><img src=".github/header.png" width="830" alt="We Don&#x27;t Assign Issues, by Open {re}Source Labs. A label that answers &quot;can I take this issue?&quot; with a comment, then removes itself."></picture></p>
+
 # [Labs] We don't assign issues
 
 This repository contains a GitHub workflow allowing to send a message in an issue by simply attaching a "we don't assign issues" label to the issue.
@@ -24,3 +26,5 @@ You can see the process in https://github.com/Open-reSource/labs-we-don-t-assign
     <img src='https://cdn.jsdelivr.net/gh/Open-reSource/sponsors/sponsors.svg'/>
   </a>
 </p>
+
+<sub>The Open {re}Source mark and the header image (`.github/header.*`) are not covered by the licence of this repository: all rights reserved.</sub>
